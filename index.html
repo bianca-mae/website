@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Set the language to English-->
+
+<!-- Head of the website, contains the most important information such as the character sets, website name and the CSS link-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/oig7fhi.css">
+    <!-- Reference for fonts: 
+    Adobe Fonts. n.d. “Web Projects.” Adobe Fonts. Accessed November 4, 2022. https://fonts.adobe.com/my_fonts#web_projects-section.
+    -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/themes/light.css">
+    <!-- References for libraries used:
+    Shoelace. n.d. “Shoelace.” Shoelace.style. Accessed November 7, 2022. https://shoelace.style/.
+    Splidejs. n.d. “@splidejs/splide.” JSDelivr. Accessed November 5, 2022. https://www.jsdelivr.com/package/npm/@splidejs/splide?path=dist%2Fcss.
+    -->
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Project Name</title>
+    <!-- Title of the website in the tab-->
+</head>
+
+<!-- Where the content of the website is stored-->
+<body>
+    <progress max="100" value="0"></progress>
+    <!-- The tag for the progress scrollbar at the bottom of the page-->
+    <!-- Reference for tutorial:
+    Hoebregts, Louis. n.d. “Scroll Progress & Gsap ScrollTrigger.” CodePen. Accessed November 8, 2022. https://codepen.io/Mamboleoo/pen/abdwYaJ.
+    -->
+
+    <audio id="sound">
+        <source src="./audio.mp3" type="audio/mpeg">
+    </audio>
+    <!-- Where the audio for the website is stored -->
+    <!-- Reference for music: Mete, Bob. 2019. Winter Rose. YouTube video, 03:34. https://www.youtube.com/watch?v=oL9Nvl4Wo-w.-->
+
+
+    <div id="track">
+        <div id="play-pause" class="play">Play</div>
+    </div>
+    <!-- The button that allows the play and pause of the music-->
+    <!-- Reference for tutorial:
+    Kusimo, Abidemi. n.d. “Custom Audio Player Play Pause Button.” CodePen. Accessed November 10, 2022. https://codepen.io/abikuk/pen/pGzJGy.
+    -->
+
+    <div class="loader">
+        <svg xmlns="http://www.w3.org/2000/svg" width="912" height="912" viewBox="0 0 912 912">
+            <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(912) rotate(90)" fill="none" stroke="#96a760" stroke-width="20" stroke-dasharray="1000 1000">
+              <circle cx="456" cy="456" r="456" stroke="none"/>
+              <circle cx="456" cy="456" r="446" fill="none"/>
+            </g>
+          </svg>          
+    </div>
+    <!-- The custome loader when the user first accesses the website.
+    This is used for the SVG animation.-->
+    <!-- Reference for tutorial:
+    codefoxx. 2022. HTML, CSS, JavaScript - How to Create and Display a Loading Spinner on Page Load (without JQuery). YouTube video, 06:38. https://www.youtube.com/watch?v=q76TexbMXJg.
+    -->
+
+    <nav id="nav">
+        <a href="#header"></a>
+        <a href="#slider1"></a>
+        <a href="#why-section"></a>
+        <a href="#slider2"></a>
+        <a href="#slider3"></a>
+    </nav>
+    <!-- Navgiation tags as a href links so that the users can click on them and be directed to that section of the website. -->
+
+
+    <!-- The code for the header section of the website-->
+    <section id="header">
+        <div class="title">
+            <h1 class="sustain">SUSTAIN</h1>
+            <h1 class="earth">EARTH</h1>
+        </div>
+
+        <div class="images-header">
+            <img class="hero-imgs img1" src="images/jeans.jpg" alt="Coloured jeans folded from lightest to darkest." >
+            <img class="hero-imgs img2" src="images/jackets.jpg" alt="Two jackets on hangers on a clothes rail">
+            <img class="hero-imgs img3" src="images/models.jpg" alt="Three male models sitting on chairs">
+        </div>
+
+            
+        <div id="question-container">
+            <div class="question-header">
+                <h2>WHAT IS <br>
+                SUSTAINABLE <br>
+                FASHION?</h2>
+            </div>
+
+            <div class="statement-header">
+                <p>make</p>
+                <p>the switch.</p>
+            </div>
+        </div>
+    <!--References for images:
+    Cottonbro Studio. 2020. “Men in Stylish Outfit.” Pexels. https://www.pexels.com/photo/men-in-stylish-outfit-6627104/.
+    Grabowska, Karolina. 2020. “Stack of Blue Jeans Arranged by Color.” Pexels. https://www.pexels.com/photo/stack-of-blue-jeans-arranged-by-color-4210863/.
+    Samkov, Ivan. 2021. “Long Sleeve Shirts Hanging on a Rack.” Pexels. https://www.pexels.com/photo/long-sleeve-shirts-hanging-on-a-rack-7671163/.
+    -->
+    </section>
+
+
+    <!-- The code for the second section fo the website, the first section that uses the Splide library -->
+    <section id="slider1" class="splide" aria-label="Images relating to fashion">
+
+        <!-- Arrows are stored in a div, as this is the layout specified by Splide-->
+        <!-- Arrows were copied and pasted from custome arrows made on Adobe XD, in which the SVG code was copied and pasted into this HTML document. -->
+        <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="563.564" height="985.707" viewBox="0 0 563.564 985.707">
+                    <g id="Group_9" data-name="Group 9" transform="translate(-271.718 -60.647)">
+                      <line id="Line_1" data-name="Line 1" x2="597" transform="translate(342.429 131.357) rotate(45)" fill="none" stroke="#96a760" stroke-linecap="round" stroke-width="100"/>
+                      <line id="Line_2" data-name="Line 2" x2="597" transform="translate(342.429 975.643) rotate(-45)" fill="none" stroke="#96a760" stroke-linecap="round" stroke-width="100"/>
+                    </g>
+                  </svg>                  
+            </button>
+            <button class="splide__arrow splide__arrow--next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="563.564" height="985.707" viewBox="0 0 563.564 985.707">
+                    <g id="Group_9" data-name="Group 9" transform="translate(-271.718 -60.647)">
+                      <line id="Line_1" data-name="Line 1" x2="597" transform="translate(342.429 131.357) rotate(45)" fill="none" stroke="#96a760" stroke-linecap="round" stroke-width="100"/>
+                      <line id="Line_2" data-name="Line 2" x2="597" transform="translate(342.429 975.643) rotate(-45)" fill="none" stroke="#96a760" stroke-linecap="round" stroke-width="100"/>
+                    </g>
+                  </svg>                  
+            </button>
+        </div>
+
+        <!-- The code for the Splide image gallery -->
+        <div class="splide__track one">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <h2>What are the different ways <br> to be sustainable?</h2>
+                    <sl-image-comparer class="image-comparer">
+                        <img 
+                        slot="before"
+                        src="images/store-logo.jpg" 
+                        alt="Image of a store logo in black and white">    
+                        
+                        <img 
+                        slot="after"
+                        src="images/sewing.jpg"
+                        alt="Sewing supplies">
+                    </sl-image-comparer>
+                    <!-- Shoelace component image comparer within a Splide slide-->
+
+                    <sl-details summary="There are quite a few different ways to be sustainable" class="details one">
+                        <ul>
+                            <li>Buy less <br> </li>
+                            <li>Buy clothes from sustainable brands <br> </li>
+                            <li>Buy better quality <br> </li>
+                            <li>Think twice before throwing out your clothes <br> </li>
+                            <li>Buy second hand, swap, & rent clothing <br> </li>
+                            <li>Keep an eye on your washing </li>
+                        </ul>
+                    </sl-details>
+                    <!-- This is the details section, in which a user can toggle down the arrow for a small box with details to appear. -->
+                </li>
+                
+        
+                <li class="splide__slide">
+                    <h2>What is <br> sustainable fashion?</h2>
+                    <sl-image-comparer class="image-comparer">
+                        <img 
+                        slot="before"
+                        src="images/clothes-rail.jpg" 
+                        alt="Image of female clothes on a clothing rail">
+
+                        <img
+                        slot="after"
+                        src="images/retail-store.jpg"
+                        alt="Clothes in retail store"
+                        class="compimg">
+                    </sl-image-comparer>
+                     <!-- Shoelace component image comparer within a Splide slide-->
+
+                    
+                    <sl-details summary="Sustainable fashion is..." class="details two">
+                        In a nutshell: sustainable and ethical fashion is an approach towards sourcing, 
+                        manufacturing and designing clothes which maximizes the benefits to the fashion 
+                        industry and society at large, while at the same time minimizing its impact on 
+                        the environment. The two concepts overlap in ideology, but they each have slightly 
+                        different concerns, both equally critical to the future of fashion.
+                    </sl-details>
+                    <!-- This is the details section, in which a user can toggle down the arrow for a small box with details to appear. -->
+
+                </li>
+
+                
+                
+                <li class="splide__slide">
+                    <h2>What are the <br> effects of fast fashion?</h2>
+                    <sl-image-comparer class="image-comparer">
+                        <img 
+                        slot="before"
+                        src="images/dumpsite.jpg" class="galimg-three" 
+                        alt="Image of dumpsite">
+
+                        <img
+                        slot="after"
+                        src="images/shopper.jpg"
+                        alt="Image of a female carrying many shopping bags whilst smiling">
+                    </sl-image-comparer>
+                    <!-- Shoelace component image comparer within a Splide slide-->
+
+                    <sl-details summary="There are various effects to fast fashion..." class="details three">
+                        The industry uses 93 billion cubic meters of water per year.
+                        It takes 3,781 liters of water to make one pair of jeans.
+                        Of all the wastewater in the world, 20% is from textile dying and is highly toxic—many countries where clothes are made have reduced or no regulations for wastewater disposal.
+                        Microplastic fibers used in clothing make their way to the ocean, amounting to about 500,000 tons—close to 50 billion plastic bottles.
+                        Fashion emits more than 10% of global carbon emissions.
+                    </sl-details>
+                    <!-- This is the details section, in which a user can toggle down the arrow for a small box with details to appear. -->
+
+                </li>
+            </ul>
+        </div>
+    <!-- Reference for Shoelace image comparer component:
+    Shoelace. n.d. “Image Comparer.” Shoelace.style. Accessed November 9, 2022. https://shoelace.style/components/image-comparer?id=importing.
+    -->
+    <!-- Reference for Shoelace details component:
+    Shoelace. n.d. “Details.” Shoelace.style. Accessed November 9, 2022. https://shoelace.style/components/details.
+    -->
+    <!-- References for images:
+    Benesh, Sean. 2019. Black and White Photo of Store Logo. Unsplash. https://unsplash.com/photos/eYPmo3BC6XY.
+    Claire, Rachel. 2020. “Clothes Hanged on Clothes Rack.” Pexels. https://www.pexels.com/photo/clothes-hanged-on-clothes-rack-5864245/.
+    Douglas, Tim. 2021. “Cheerful Shopper with Bright Gift Bags Smiling.” Pexels. https://www.pexels.com/photo/cheerful-shopper-with-bright-gift-bags-smiling-6567283/.
+    Emmet. 2016. “Dumpsite Under Clear Sky.” Pexels. https://www.pexels.com/photo/dumpsite-under-clear-sky-128421/.
+    Shkraba, Antoni. 2021. “Close-Up Shot of Sewing Tools on a Wooden Surface.” Pexels. https://www.pexels.com/photo/close-up-shot-of-sewing-tools-on-a-wooden-surface-6665035/.
+    Strohmann, Alyssa. 2019. Photo of Clothes on Clothing Rail. Unsplash. https://unsplash.com/photos/TS--uNw-JqE.
+    -->
+    <!-- References for text (information):
+    Hayes, Adam. n.d. “Fast Fashion Explained and How It Impacts Retail Manufacturing.” Investopedia. Accessed November 10, 2022. https://www.investopedia.com/terms/f/fast-fashion.asp#:~:text=Fast%20fashion’s%20benefits%20are%20affordable,low%20wages%2C%20and%20unsafe%20workplaces..
+    Sustainable Jungle. n.d. “What is Sustainable & Ethical Fashion?” Sustainable Jungle. Accessed November 10, 2022. https://www.sustainablejungle.com/sustainable-living/ethical-sustainable-fashion/.
+    Sustain Your Style. n.d. “How Can We Reduce our Fashion Environmental Impact?.” Sustain Your Style. Accessed November 10, 2022. https://www.sustainyourstyle.org/en/reducing-our-impact.
+    -->
+    </section>
+    
+
+    <!-- Third section of the website, in which a horizontal sliding gallery has been used-->
+    <section id="why-section">
+        <h2 class="statement one" >Now you may be wondering,</h2>
+        
+        <!-- Images a wrapped for organisation purposes-->
+        <div class="gallerywrap">
+            <div class="img-gal-one">
+                <img src="images/factory.jpg" alt="Image of inside a clothing factory">
+                
+                <sl-dialog label="Fashion's Social Impacts" class="dialog-overview one">
+                    <div class="dialogtext">
+                        <p>Because it must be cheap, fast fashion is dependent <br> 
+                        on the exploited labor force in developing countries <br>
+                        where regulations are lax. Workers are underpaid, <br>
+                        overworked, and exposed to dangerous conditions or <br>
+                        health hazards; many are underage. Of the 75 million <br> 
+                        factory workers around the world, it's estimated that <br>
+                        only two percent earn a living wage. To keep brands <br>
+                        from moving to another country or region with lower <br>
+                        costs, factories limit wages and are disinclined to <br>
+                        spend money to improve working conditions. <br>
+                        Moreover, workers often live in areas with waterways <br>
+                        polluted by the chemicals from textile dyeing. </p>
+                    </div>
+                    <sl-button slot="footer" class="closebtn" >Close</sl-button>
+                </sl-dialog>
+                <sl-button class="btn one"></sl-button>
+                <!-- Information is stored within a dialog button, a Shoelace component -->
+
+
+                <img src="images/material-rolls.jpg" alt="White rolls of material fabric stacked on top of one another">
+                
+                <sl-dialog label="Microplastic Pollution" class="dialog-overview two">
+                    <div class="dialogtext">
+                        <p>
+                            When clothes made from synthetics are washed,<br>
+                            microplastics from their fibers are shed into the <br>
+                            wastewater. Some of it is filtered out at wastewater <br>
+                            treatment plants along with human waste and the <br>
+                            resulting sludge is used as fertilizer for agriculture. <br>
+                            Microplastics then enter the soil and become part <br>
+                            of the food chain. The microplastics that elude the <br>
+                            treatment plant end up in rivers and oceans, and <br>
+                            in the atmosphere when seawater droplets carry <br>
+                            them into the air. It's estimated that 35 percent of <br>
+                            the microplastics in the ocean come from the <br>
+                            fashion industry. While some brands use <br>
+                            “recycled polyester” from PET bottles, which emits <br>
+                            50 to 25 percent fewer emissions than virgin <br>
+                            polyester, effective polyester recycling is limited, <br>
+                            so after use, these garments still usually end up in <br>
+                            the landfill where they can shed microfibers. <br>
+                            Microplastics harm marine life, as well as birds and <br>
+                            turtles. They have already been found in our food, <br>
+                            water and air—one study found that Americans eat <br>
+                            74,000 microplastic particles each year. And while <br>
+                            there is growing concern about this, the risks to <br>
+                            human health are still not well understood.
+                        </p>
+                    </div>
+                    <sl-button class="closebtn two" slot="footer" variant="primary">Close</sl-button>
+                </sl-dialog>
+                <sl-button class="btn two"></sl-button>
+                <!-- Information is stored within a dialog button, a Shoelace component -->
+
+
+
+                <img src="images/fancy-buildings.jpg" alt="image of side of squared shaped building">
+
+                <sl-dialog label="Contributions to Climate Change" class="dialog-overview three">
+                    <div class="dialogtext">
+                        <p>
+                        To feed the fashion industry's need for wood pulp to <br>
+                        make fabrics like rayon, viscose and other fabrics, <br>
+                        70 million tons of trees are cut down each year. That <br>
+                        number is expected to double by 2034, speeding <br>
+                        deforestation in some of the world's endangered <br>
+                        forests. <br> <br>
+
+                        The fashion industry produces 1.2 million metric tons <br>
+                        of CO2 each year, according to a MacArthur <br>
+                        Foundation study. In 2018, it resulted in more <br>
+                        greenhouse gas emissions than the carbon <br>
+                        produced by France, Germany and the UK all <br>
+                        together. Polyester, which is actually plastic made <br>
+                        from fossil fuels, is used for about 65 percent of all <br>
+                        clothing, and consumes 70 million barrels of oil each <br>
+                        year. In addition, the fashion industry uses large <br>
+                        amounts of fossil fuel-based plastic for packaging <br>
+                        and hangers.
+                        </p>
+                    </div>
+                    <sl-button class="closebtn three" slot="footer" variant="primary">Close</sl-button>
+                </sl-dialog>
+                <sl-button class="btn three"></sl-button>
+                <!-- Information is stored within a dialog button, a Shoelace component -->
+            </div>
+        </div>
+
+        <h2 class="question one">WHY?</h2>
+    <!-- Reference for Shoelace dialog component:
+    Shoelace. n.d. “Dialog.” Shoelace.style. Accessed November 9, 2022. https://shoelace.style/components/dialog.
+    -->
+    <!-- Reference for image slider tutorial:
+    Sattar, Taimoor. n.d. “Image Slider.” CodePen. Accessed November 6, 2022. https://codepen.io/taimoorsattar/pen/yLJBdKO.
+    -->
+    <!-- References for images:
+    Bodnar, Ethan. 2018. Photo of Rolls of Materials. Unsplash. https://unsplash.com/photos/kgC99X3WH1w.
+    Lecatompessy, Rio. 2020. Photo of Garment Factory. Unsplash. https://unsplash.com/photos/cfDURuQKABk.
+    Pierre Châtel-Innocenti. 2018. Photo of Side of Building. Unsplash. https://unsplash.com/photos/lQhtkVIiWiE. 
+    -->
+    <!-- References for text (information):
+    Cho, Renee. 2021. “Why Fashion Needs to Be More Sustainable.” Columbia Climate School. https://news.climate.columbia.edu/2021/06/10/why-fashion-needs-to-be-more-sustainable/.
+    Cho, Renee. 2021. “Why Fashion Needs to Be More Sustainable.” Columbia Climate School. https://news.climate.columbia.edu/2021/06/10/why-fashion-needs-to-be-more-sustainable/.
+    Cho, Renee. 2021. “Why Fashion Needs to Be More Sustainable.” Columbia Climate School. https://news.climate.columbia.edu/2021/06/10/why-fashion-needs-to-be-more-sustainable/.
+    -->
+    </section>
+
+
+
+    <!-- Code for the fourth section of the website, another Splide gallery-->
+    <section id="slider2" class="splide" aria-label="Images relating to how one can contribute more to sustainable fashion">
+        <h2 class="statement two">Here's where YOU come in</h2>
+
+        <!-- Arrows stored within a div as this is the layout specified by Splide -->
+        <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev two">
+                <svg xmlns="http://www.w3.org/2000/svg" width="563.564" height="985.707" viewBox="0 0 563.564 985.707">
+                    <g id="Group_9" data-name="Group 9" transform="translate(-271.718 -60.647)">
+                      <line id="Line_1" data-name="Line 1" x2="597" transform="translate(342.429 131.357) rotate(45)" fill="none" stroke="#96a760" stroke-linecap="round" stroke-width="100"/>
+                      <line id="Line_2" data-name="Line 2" x2="597" transform="translate(342.429 975.643) rotate(-45)" fill="none" stroke="#96a760" stroke-linecap="round" stroke-width="100"/>
+                    </g>
+                  </svg>                                                                                                                                          
+            </button>
+            <!-- Buttons are SVG code, created on Adobe XD and pasted into this HTML document -->
+
+            <button class="splide__arrow splide__arrow--next two">
+                <svg xmlns="http://www.w3.org/2000/svg" width="563.564" height="985.707" viewBox="0 0 563.564 985.707">
+                    <g id="Group_9" data-name="Group 9" transform="translate(-271.718 -60.647)">
+                      <line id="Line_1" data-name="Line 1" x2="597" transform="translate(342.429 131.357) rotate(45)" fill="none" stroke="#96a760" stroke-linecap="round" stroke-width="100"/>
+                      <line id="Line_2" data-name="Line 2" x2="597" transform="translate(342.429 975.643) rotate(-45)" fill="none" stroke="#96a760" stroke-linecap="round" stroke-width="100"/>
+                    </g>
+                  </svg>                                                                                                                                                
+            </button>
+            <!-- Buttons are SVG code, created on Adobe XD and pasted into this HTML document -->
+
+        </div>
+
+        <!-- Code for the actual gallery -->
+        <div class="splide__track two">
+            <ul class="splide__list two">
+                <li class="splide__slide two">
+                    <img src="images/closeup-material.jpg" class="img one" alt="close up photograph of a clothing's material">
+                    <div>
+                        <p>
+                            It's all about planning. Buying better quality, more sustainable pieces is likely to cost you more 
+                            money than buying a cheap high-street product that doesn't tick the right boxes. However, it's all 
+                            about changing your mindset. Yes, it costs more, but you're likely to have it for longer and will 
+                            be buying less per season overall. Buying just a few high-quality items a year, rather than lots of 
+                            cheaper, less eco-friendly pieces, will dramatically reduce your carbon footprint. Basically, save up, 
+                            invest and buy less.
+                        </p>
+                    </div>
+                </li>
+
+                <li class="splide__slide two">
+                    <img src="images/small-business.jpg" alt="Image of a group of people around a computer in deep discussion">
+                    <div>
+                        <p>
+                            Shop locally. Buy from local shops for clothes, buy from local craftspeople to accessorize your outfits 
+                            and use your neighborhood tailor for adjustments. 
+                            <br>
+                            <br>
+                            Earth-friendly benefit: Buying clothes locally reduces carbon emissions from shipping while supporting 
+                            your local economy.
+                        </p>
+                        <!-- Use of <br> for the line gaps -->
+                    </div>
+                </li>
+
+                <li class="splide__slide two">
+                    <img src="images/donate.jpg" alt="Image of a box with clothes inside, with the word donation being written on a yellow sticky note">
+                    <div>
+                        <p>
+                            Donating your unwanted clothes to a good cause, rather than leaving them hanging in your wardrobe, 
+                            will help others to be more sustainable; they will invest in your old pieces, rather than buying 
+                            something new. A great way to do this is to have a one-in, one-out policy - live by the mantra that 
+                            every time you buy something, you'll donate something.
+                        </p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <h2 class="question two">easy, right?</h2>
+    <!-- References for images:
+    Bigelow, Jordan. 2020. Close Up Photo of Material. Unsplash. https://unsplash.com/photos/pdWGj0NlVV0.
+    Cameron, Julia M. 2021. “Clothes in a Plastic Box for Donation.” Pexels. https://www.pexels.com/photo/clothes-in-a-plastic-box-for-donation-6995179/.
+    Fox. 2018. “Group of People Watching on Laptop.” Pexels. https://www.pexels.com/photo/group-of-people-watching-on-laptop-1595385/.
+    -->
+    <!-- References for text (information):
+    Davis, Jessica. “10 Simple Steps to Being More Sustainable.” Harper’s Bazaar Blog, September 22, 2022. https://www.harpersbazaar.com/uk/fashion/what-to-wear/a41158/how-to-be-sustainable-fashion/.
+    Davis, Jessica. “10 Simple Steps to Being More Sustainable.” Harper’s Bazaar Blog, September 22, 2022. https://www.harpersbazaar.com/uk/fashion/what-to-wear/a41158/how-to-be-sustainable-fashion/.
+    EarthDay.org. n.d. “Toolkit: How to Sustainably Shop For Your Clothes.” EarthDay.org. Accessed November 10, 2022. https://www.earthday.org/toolkit-how-to-shop-for-your-clothes/.
+    -->
+    </section>
+
+
+    <!-- The final major section of the website, the gallery that provides the user an example of a minimalist and sustainable wardrobe. -->
+    <section id="slider3" class="splide" aria-label="Example images of a versatile wardrobe">
+        <h2 class="statement three">An example</h2>
+
+        <!-- Arrows stored within a div as specified by Splide -->
+        <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev three">
+                <svg xmlns="http://www.w3.org/2000/svg" width="563.564" height="985.707" viewBox="0 0 563.564 985.707">
+                    <g id="Group_9" data-name="Group 9" transform="translate(-271.718 -60.647)">
+                      <line id="Line_1" data-name="Line 1" x2="597" transform="translate(342.429 131.357) rotate(45)" fill="none" stroke="#96a760" stroke-linecap="round" stroke-width="100"/>
+                      <line id="Line_2" data-name="Line 2" x2="597" transform="translate(342.429 975.643) rotate(-45)" fill="none" stroke="#96a760" stroke-linecap="round" stroke-width="100"/>
+                    </g>
+                  </svg>                                                  
+            </button>
+
+            <button class="splide__arrow splide__arrow--next three">
+                <svg xmlns="http://www.w3.org/2000/svg" width="563.564" height="985.707" viewBox="0 0 563.564 985.707">
+                    <g id="Group_9" data-name="Group 9" transform="translate(-271.718 -60.647)">
+                      <line id="Line_1" data-name="Line 1" x2="597" transform="translate(342.429 131.357) rotate(45)" fill="none" stroke="#96a760" stroke-linecap="round" stroke-width="100"/>
+                      <line id="Line_2" data-name="Line 2" x2="597" transform="translate(342.429 975.643) rotate(-45)" fill="none" stroke="#96a760" stroke-linecap="round" stroke-width="100"/>
+                    </g>
+                  </svg>                                                  
+            </button>
+        </div>
+
+        <!-- The actual code for the gallery -->
+        <div class="splide__track three">
+            <ul class="splide__list three">
+                <li class="splide__slide three">
+                    <img src="images/model-white-shirt.jpg" alt="Image of a model wearing a white t-shirt, blue jeans and a cap.">
+                </li>
+
+                <li class="splide__slide three">
+                    <img src="images/model-black-blazer.jpg" alt="Image a model wearing a black blazer">
+                </li>
+
+                <li class="splide__slide three">
+                    <img src="images/turtleneck.jpg" alt="Image of a model taking off a turtleneck">
+                </li>
+
+                <li class="splide__slide three">
+                    <img src="images/model-black-shirt.jpg" alt="Image of a model wearing a black t-shirt">
+                </li>
+
+                <li class="splide__slide three">
+                    <img src="images/white-shoes.jpg" alt="Image of a person wearing white shoes">
+                </li>
+
+                <li class="splide__slide three">
+                    <img src="images/coloured-pants.jpg" alt="Image of people holding hands wearing colourful suits">
+                </li>
+
+                <li class="splide__slide three">
+                    <img src="images/black-tote.jpg" alt="Image of woman carrying a large black tote bag">
+                </li>
+
+                <li class="splide__slide three">
+                    <img src="images/bags.jpg" alt="Image a white and a black bag">
+                </li>
+                
+            </ul>
+        </div>
+        
+        <h2 class="question three">of a <em>versatile</em> wardrobe</h2>
+    <!-- Reference for images:
+    Cottonbro Studio. 2020. “Person in White Low Top Sneakers.” Pexels. https://www.pexels.com/photo/person-in-white-low-top-sneakers-4855449/.
+    Diez, John. 2021. “Asian Woman with Eco Friendly Bag in City.” Pexels. https://www.pexels.com/photo/asian-woman-with-eco-friendly-bag-in-city-7578423/.
+    Mart Production. 2021. “Woman in Black Crew Neck Shirt.” Pexels. https://www.pexels.com/photo/woman-in-black-crew-neck-shirt-9558706/.
+    Mart Production. 2021. “Woman in White Crew Neck T-shirt and Blue Denim Jeans.” Pexels. https://www.pexels.com/photo/woman-in-white-crew-neck-t-shirt-and-blue-denim-jeans-9558785/.
+    Miroshnichenko, Tima. 2021. “People Wearing Blazers and Pants Holding Hands while Standing Together.” Pexels. https://www.pexels.com/photo/people-wearing-blazers-and-pants-holding-hands-while-standing-together-7202774/.
+    Mukuko Studio. 2019. Person Taking off White Turtleneck Sweater. Unsplash. https://unsplash.com/photos/mU88MlEFcoU.
+    PNW Production. 2021. “Black and White Leather Shoulder Bags Hanging on a Clothing Rack.” Pexels. https://www.pexels.com/photo/black-and-white-leather-shoulder-bags-hanging-on-a-clothing-rack-9218393/.
+    Shvets, Anna. 2020. “Woman Standing While Wearing Black Blazer.” Pexels. https://www.pexels.com/photo/woman-standing-while-wearing-black-blazer-3645482/.
+    -->
+    </section>
+
+    <!-- Shoelace button used to allow the user to go back to the top of the page -->
+    <sl-button class="button" href="#header">Back to top</sl-button>
+    <!-- Reference for individual Shoelace button:
+    Shoelace. n.d. “Button.” Shoelace.style. Accessed November 7, 2022. https://shoelace.style/components/button.
+    -->
+    
+
+    <!-- Footer section of the website-->
+    <section id="footer-section">
+        <div class="footer">
+            <div class="footer-text left">
+                <h4>Sustain Earth</h4>
+                <p>By Nadine Arkle</p>
+                <p>Nadine is a fashion influencer, with a focus on sustainable and slow fashion. She encourages her followers to 
+                shop sustainably where they can. Join Nadine to help sustain the Earth's environment. It only takes one step.</p>
+            </div>
+
+            <div class="footer-text right">
+                <div class="soc-logos">
+                    <img src="images/instagram-logo.png" alt="Image of Instagram logo">
+                    <img src="images/twitter-logo.png" alt="Image of Twitter logo">
+                    <img src="images/youtube-logo.png" alt="Image of YouTube logo">
+                </div>
+
+                <div class="soc-text">
+                    <p>@nadine.sustains</p>
+                    <p>@nadine.sustains</p>
+                    <p>Nadine Sustains the Earth</p>
+                </div>
+            </div>
+        </div>
+    <!-- References for social media logos:
+    Starline. n.d. “Flat Social Media Icons With Shadows.” Freepik. Accessed November 11, 2022. https://www.freepik.com/free-vector/flat-social-media-icons-with-shadows_2607368.htm#query=instagram%20logo&position=4&from_view=search.
+    -->
+    </section>
+
+    <!-- Script tags for the libraries and own script used for the creation of this website -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/shoelace.js"></script>
+    <script src="main.js"></script>
+    <!--References for libraries used:
+    GreenSock. n.d. “GSAP Installation.” GreenSock. Accessed November 8, 2022. https://greensock.com/docs/v3/Installation?checked=core,scrollTrigger.
+    Shoelace. n.d. “Shoelace.” Shoelace.style. Accessed November 7, 2022. https://shoelace.style/.
+    Splide. n.d. “Splide Examples.” Splide. Accessed November 5, 2022. https://splidejs.com/.
+    Splidejs. n.d. “@splidejs/splide.” JSDelivr. Accessed November 5, 2022. https://www.jsdelivr.com/package/npm/@splidejs/splide?path=dist.
+    -->
+</body>
+</html>
